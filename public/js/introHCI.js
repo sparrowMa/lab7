@@ -10,4 +10,17 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+
+    // $(".likeBtn").click(function(event) {
+    //     ga('send', 'event', 'like', 'click');
+    // });
+
+
+    $(".likeBtn").click(function(event) {
+        gtag('event','click', {
+            'event_category': 'like'
+            // 'event_label': 'label',
+            // 'value': 1
+        });
+    });
 }
